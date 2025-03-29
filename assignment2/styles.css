@@ -1,0 +1,162 @@
+/* 🌟 Mobile Screens (Max Width: 900px) */
+@media screen and (max-width: 900px) {
+    ul.nav_links {
+        display: block;
+    }
+
+    .nav_links li {
+        margin: 5px;
+    }
+
+    .sale-list {
+        padding-top: 50px;
+        margin: 0px 1em;
+        max-width: 100%; /* Use full width for better scaling */
+        font-size: medium;
+    }
+
+    .sale-list > p {
+        text-align: justify;
+        font-size: small;
+    }
+
+    .article {
+        font-size: medium;
+        margin-bottom: 30px;
+        padding-top: 65px;
+        margin: 15px auto; /* Center content */
+        max-width: 90%;
+    }
+
+    .article > p {
+        text-align: justify;
+        font-size: small;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 product per row on mobile */
+        gap: 15px;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .product-list img {
+        width: 100%;
+        height: auto;
+    }
+
+    .subscribe {
+        width: 100%;
+        text-align: center;
+    }
+
+    #shop {
+        text-align: center;
+        position: relative;
+        bottom: 40px;
+        font-style: oblique;
+        font-size: 20px;
+    }
+
+    .subscribe-offer {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+
+    .testimonial img {
+        width: 80px;
+    }
+
+    .content {
+        width: 100%;
+        background-color: gray;
+    }
+
+    .content-list {
+        width: 100%;
+    }
+
+    .footer-content {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .sale,
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    /* 🔹 Mobile Navigation Fix */
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: white;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_links.active {
+        display: flex;
+    }
+}
+
+/* 🌟 Tablet & Larger Screens (Min Width: 768px) */
+@media (min-width: 768px) {
+    .nav_links {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        background: transparent;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .nav_links li {
+        margin: 0 15px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+        gap: 20px;
+        width: 80%;
+    }
+}
+
+/* 🌟 Large Screens (Min Width: 1024px) */
+@media (min-width: 1024px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 per row on large screens */
+        gap: 20px;
+        width: 80%;
+    }
+}
